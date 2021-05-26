@@ -35,4 +35,15 @@ dependencies {
     implementation "io.ktor:ktor-server-core:$ktor_version"
     implementation "io.ktor:ktor-gson:$ktor_version"
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
+    implementation("io.ktor:ktor-locations:$ktor_version")
+
+    //expose table create krna ya database create krne me help krega
+    implementation "org.jetbrains.exposed:exposed-core:$exposed_version"
+    implementation "org.jetbrains.exposed:exposed-dao:$exposed_version"
+    implementation "org.jetbrains.exposed:exposed-jdbc:$exposed_version"
+
+    implementation "org.postgresql:postgresql:$postgres_version"
+
+    // database se connection provide krwayega
+    implementation "com.zaxxer:HikariCP:$hikaricp_version"
 }
